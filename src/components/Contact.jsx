@@ -11,8 +11,7 @@ const Contact = () => {
           overflow: 'hidden',
           marginBottom: '4rem'
         }}>
-          <div style={{
-            padding: '5rem 4rem',
+          <div className="contact-inner-pad" style={{
             backgroundColor: 'var(--text-primary)',
             color: 'var(--bg-primary)'
           }}>
@@ -35,7 +34,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div style={{ padding: '5rem 4rem' }}>
+          <div className="contact-inner-pad">
             <form onSubmit={(e) => {
               e.preventDefault();
               const name = e.target.name.value;

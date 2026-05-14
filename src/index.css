@@ -111,6 +111,40 @@ section {
   grid-template-columns: 1fr 1fr;
 }
 
+.contact-inner-pad {
+  padding: 5rem 4rem;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: #000000;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 0 2rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+.mobile-menu.open {
+  display: flex;
+}
+.mobile-menu li {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.mobile-menu li:last-child {
+  border-bottom: none;
+}
+
 .footer-layout {
   display: flex;
   justify-content: space-between;
@@ -181,6 +215,14 @@ section {
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  section {
+    padding: 4rem 0;
+  }
+
   .grid-2,
   .contact-layout,
   .hero-container {
@@ -203,11 +245,12 @@ section {
   }
   
   h1, .hero-title {
-    font-size: 2.5rem !important;
+    font-size: 2.2rem !important;
   }
-  h2 { font-size: 2rem; }
-  h3 { font-size: 1.5rem; }
-  h4 { font-size: 1.1rem; }
+  h2 { font-size: 1.8rem; }
+  h3 { font-size: 1.3rem; }
+  h4 { font-size: 1rem; }
+  p { font-size: 0.9rem; }
   
   .hero-text-container {
     padding-right: 0 !important;
@@ -228,15 +271,19 @@ section {
   }
   
   .topbar-content {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
   }
   
   .topbar-info {
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+  }
+  
+  .topbar-content span {
+    font-size: 0.75rem !important;
   }
 
   .hide-mobile {
@@ -273,5 +320,18 @@ section {
   }
   .amenities-grid-custom p {
     font-size: 0.85rem !important;
+  }
+
+  .contact-inner-pad {
+    padding: 3rem 1.5rem !important;
+  }
+
+  .book-now-btn {
+    padding: 0.6rem 1rem !important;
+    font-size: 0.75rem !important;
+  }
+
+  .hamburger {
+    display: block !important;
   }
 }
