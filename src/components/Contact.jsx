@@ -95,18 +95,18 @@ const Contact = () => {
         {/* Map Section */}
         <div style={{ borderRadius: '4px', overflow: 'hidden', height: '400px' }}>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4233816773356!2d76.22271811480132!3d10.972365992189688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7d2fe9485b0d5%3A0x6e268cc02604b73b!2sMoulana%20Hospital%20Perinthalmanna!5e0!3m2!1sen!2sin!4v1684307525330!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3733.164636589392!2d76.2260090750448!3d10.981260989180205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDU4JzUyLjUiTiA3NsKwMTMnNDIuOSJF!5e1!3m2!1sen!2sin!4v1779876033002!5m2!1sen!2sin"
             width="100%"
             height="100%"
             style={{ border: 0 }}
-            allowFullScreen=""
+            allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             title="Google Map Location"
           ></iframe>
         </div>
       </div>
-    </section>
+    </section >
   );
 };
 
